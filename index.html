@@ -19,10 +19,24 @@
       <nav class="nav">
         <a href="index.html">Anasayfa</a>
         <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#egitim">Eğitimler</a>
+        <div class="nav-dropdown">
+          <a href="#egitim" class="nav-dropdown-trigger">Eğitimler <span class="nav-arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="egitim/fitness.html">Fitness</a>
+            <a href="egitim/dovus-sporlari.html">Dövüş Sporları</a>
+            <a href="egitim/reformer-pilates.html">Reformer Pilates</a>
+            <a href="egitim/yuzme.html">Yüzme</a>
+            <a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a>
+            <a href="egitim/kick-boks.html">Kick Boks</a>
+            <a href="egitim/boks.html">Boks</a>
+            <a href="egitim/gures.html">Güreş</a>
+            <a href="egitim/mma.html">MMA</a>
+          </div>
+        </div>
         <a href="#neden">Neden Biz</a>
         <a href="#nasil">Süreç</a>
         <a href="#indirim">Fırsat</a>
+        <a href="blog.html">Blog</a>
         <a href="iletisim.html">İletişim</a>
       </nav>
       <button class="menu-btn" aria-label="Menü" id="menuBtn">
@@ -32,10 +46,24 @@
     <nav class="nav-mobile" id="navMobile" aria-hidden="true">
       <a href="index.html">Anasayfa</a>
       <a href="#hakkimizda">Hakkımızda</a>
-      <a href="#egitim">Eğitimler</a>
+      <button type="button" class="nav-mobile-trigger" id="navMobileTrigger" aria-expanded="false" aria-controls="navMobileSub">Hizmetler</button>
+      <div class="nav-mobile-sub" id="navMobileSub">
+        <div class="nav-mobile-sub-inner">
+          <a href="egitim/fitness.html">Fitness</a>
+          <a href="egitim/dovus-sporlari.html">Dövüş Sporları</a>
+          <a href="egitim/reformer-pilates.html">Reformer Pilates</a>
+          <a href="egitim/yuzme.html">Yüzme</a>
+          <a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a>
+          <a href="egitim/kick-boks.html">Kick Boks</a>
+          <a href="egitim/boks.html">Boks</a>
+          <a href="egitim/gures.html">Güreş</a>
+          <a href="egitim/mma.html">MMA</a>
+        </div>
+      </div>
       <a href="#neden">Neden Biz</a>
       <a href="#nasil">Süreç</a>
       <a href="#indirim">Fırsat</a>
+      <a href="blog.html">Blog</a>
       <a href="iletisim.html">İletişim</a>
     </nav>
   </header>
@@ -56,6 +84,7 @@
       <!-- İnce form şeridi – hero'nun altında, öğeler yan yana -->
       <div class="hero-form-strip" id="kayit">
         <div class="container hero-form-strip-inner">
+          <p class="hero-form-strip-note">Ücretsiz detaylı ölçüm dahil — Hemen başvurun</p>
           <form class="hero-strip-form" id="heroForm">
             <input type="text" id="heroName" name="name" class="hero-strip-input" placeholder="Ad Soyad" required />
             <input type="tel" id="heroPhone" name="phone" class="hero-strip-input" placeholder="Telefon" required />
@@ -123,10 +152,11 @@
     <section class="services" id="egitim">
       <div class="container">
         <p class="services-badge">Eğitimlerimiz</p>
-        <h2 class="services-title">Dört Dal, Tek Çatı Altında</h2>
+        <h2 class="services-title">Tüm Eğitimler, Tek Çatı Altında</h2>
         <p class="services-sub">Her biri alanında uzman eğitmenlerle bire bir çalışın.</p>
         <div class="services-grid">
           <article class="service-card">
+            <a href="egitim/fitness.html" class="service-card-link" aria-label="Fitness detay sayfası"></a>
             <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80')"></div>
             <div class="service-card-overlay"></div>
             <div class="service-card-content">
@@ -136,6 +166,7 @@
             </div>
           </article>
           <article class="service-card">
+            <a href="egitim/dovus-sporlari.html" class="service-card-link" aria-label="Dövüş Sporları detay sayfası"></a>
             <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80')"></div>
             <div class="service-card-overlay"></div>
             <div class="service-card-content">
@@ -145,6 +176,7 @@
             </div>
           </article>
           <article class="service-card">
+            <a href="egitim/reformer-pilates.html" class="service-card-link" aria-label="Reformer Pilates detay sayfası"></a>
             <div class="service-card-bg">
               <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Reformer Pilates" />
             </div>
@@ -156,12 +188,63 @@
             </div>
           </article>
           <article class="service-card">
+            <a href="egitim/yuzme.html" class="service-card-link" aria-label="Yüzme detay sayfası"></a>
             <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80')"></div>
             <div class="service-card-overlay"></div>
             <div class="service-card-content">
               <span class="service-tag">Yüzme</span>
               <h3 class="service-card-title">Yüzme</h3>
               <p class="service-card-desc">Başlangıçtan ileri seviyeye özel yüzme dersleri. Teknik ve güven odaklı eğitim.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/medikal-fitness-pilates.html" class="service-card-link" aria-label="Medikal Fitness Pilates detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Medikal</span>
+              <h3 class="service-card-title">Medikal Fitness / Pilates</h3>
+              <p class="service-card-desc">Rehabilitasyon ve sakatlık sonrası iyileşme odaklı medikal fitness ve pilates. Kişiye özel program.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/kick-boks.html" class="service-card-link" aria-label="Kick Boks detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1583454110551-21f2fa2ac61f?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Kick Boks</span>
+              <h3 class="service-card-title">Kick Boks</h3>
+              <p class="service-card-desc">Yumruk ve tekneğin bir arada kullanıldığı kick boks eğitimi. Kondisyon ve teknik bire bir çalışılır.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/boks.html" class="service-card-link" aria-label="Boks detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Boks</span>
+              <h3 class="service-card-title">Boks</h3>
+              <p class="service-card-desc">Klasik boks tekniği, ayak çalışması ve ring stratejisi. Bire bir antrenör eşliğinde ilerleyin.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/gures.html" class="service-card-link" aria-label="Güreş detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Güreş</span>
+              <h3 class="service-card-title">Güreş</h3>
+              <p class="service-card-desc">Geleneksel ve serbest güreş teknikleri. Güç, denge ve taktik odaklı bire bir güreş eğitimi.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/mma.html" class="service-card-link" aria-label="MMA detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">MMA</span>
+              <h3 class="service-card-title">MMA</h3>
+              <p class="service-card-desc">Karma dövüş sanatları: boks, tekme, güreş ve yer dövüşü. Kapsamlı ve güvenli bire bir MMA eğitimi.</p>
             </div>
           </article>
         </div>
@@ -174,6 +257,13 @@
         <p class="section-badge">Neden d.academy</p>
         <h2 class="section-title">Farkımız Ne?</h2>
         <div class="why-grid">
+          <div class="why-card why-card--highlight">
+            <div class="why-icon">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=120&q=80" alt="" />
+            </div>
+            <h3>Ücretsiz Detaylı Ölçüm</h3>
+            <p>Başlamadan önce vücut analizi, hedef belirleme ve mevcut durum değerlendirmesi ücretsiz. Programınız bu ölçüme göre kişiselleştirilir.</p>
+          </div>
           <div class="why-card">
             <div class="why-icon">
               <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=120&q=80" alt="" />
@@ -197,7 +287,7 @@
           </div>
           <div class="why-card">
             <div class="why-icon">
-              <img src="https://images.unsplash.com/photo-1597349048518-0c3c2d838c39?auto=format&fit=crop&w=120&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=120&q=80" alt="Premium spor tesisi" />
             </div>
             <h3>Premium Ortam</h3>
             <p>Temiz, güvenli ve motive eden tesisler. Spor yaparken kendinizi evinizde hissedin.</p>
@@ -212,7 +302,7 @@
         <div class="steps-v2-head">
           <span class="steps-v2-badge">Süreç</span>
           <h2 class="steps-v2-title">Nasıl Başlıyoruz?</h2>
-          <p class="steps-v2-intro">Hedefinize giden yolu üç net adımda birlikte ilerletiyoruz.</p>
+          <p class="steps-v2-intro">Ücretsiz detaylı ölçümle başlıyoruz; hedefinize giden yolu üç net adımda birlikte ilerletiyoruz.</p>
         </div>
         <div class="steps-v2-track">
           <article class="steps-v2-card">
@@ -289,16 +379,22 @@
           <li><a href="index.html">Ana sayfa</a></li>
           <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
           <li><a href="index.html#egitim">Eğitimler</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="iletisim.html">İletişim</a></li>
         </ul>
       </div>
       <div class="footer-block">
         <h4 class="footer-title">Eğitimler</h4>
         <ul class="footer-links">
-          <li><a href="index.html#egitim">Fitness</a></li>
-          <li><a href="index.html#egitim">Dövüş Sporları</a></li>
-          <li><a href="index.html#egitim">Reformer Pilates</a></li>
-          <li><a href="index.html#egitim">Yüzme</a></li>
+          <li><a href="egitim/fitness.html">Fitness</a></li>
+          <li><a href="egitim/dovus-sporlari.html">Dövüş Sporları</a></li>
+          <li><a href="egitim/reformer-pilates.html">Reformer Pilates</a></li>
+          <li><a href="egitim/yuzme.html">Yüzme</a></li>
+          <li><a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a></li>
+          <li><a href="egitim/kick-boks.html">Kick Boks</a></li>
+          <li><a href="egitim/boks.html">Boks</a></li>
+          <li><a href="egitim/gures.html">Güreş</a></li>
+          <li><a href="egitim/mma.html">MMA</a></li>
         </ul>
       </div>
       <div class="footer-block">
@@ -346,6 +442,30 @@
           a.addEventListener('click', function () {
             navMobile.setAttribute('aria-hidden', 'true');
             menuBtn.classList.remove('open');
+          });
+        });
+      }
+      var dropdown = document.querySelector('.nav-dropdown');
+      if (dropdown) {
+        dropdown.addEventListener('mouseenter', function () { dropdown.classList.add('open'); });
+        dropdown.addEventListener('mouseleave', function () { dropdown.classList.remove('open'); });
+      }
+      var mobileTrigger = document.getElementById('navMobileTrigger');
+      var mobileSub = document.getElementById('navMobileSub');
+      if (mobileTrigger && mobileSub) {
+        mobileTrigger.addEventListener('click', function () {
+          var open = mobileTrigger.getAttribute('aria-expanded') === 'true';
+          mobileTrigger.setAttribute('aria-expanded', !open);
+          mobileSub.classList.toggle('open', !open);
+        });
+        mobileSub.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            var nav = document.getElementById('navMobile');
+            if (nav) { nav.setAttribute('aria-hidden', 'true'); }
+            var btn = document.getElementById('menuBtn');
+            if (btn) { btn.classList.remove('open'); }
+            mobileTrigger.setAttribute('aria-expanded', 'false');
+            mobileSub.classList.remove('open');
           });
         });
       }

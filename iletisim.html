@@ -19,10 +19,24 @@
       <nav class="nav">
         <a href="index.html">Anasayfa</a>
         <a href="index.html#hakkimizda">Hakkımızda</a>
-        <a href="index.html#egitim">Eğitimler</a>
+        <div class="nav-dropdown">
+          <a href="index.html#egitim" class="nav-dropdown-trigger">Eğitimler <span class="nav-arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="egitim/fitness.html">Fitness</a>
+            <a href="egitim/dovus-sporlari.html">Dövüş Sporları</a>
+            <a href="egitim/reformer-pilates.html">Reformer Pilates</a>
+            <a href="egitim/yuzme.html">Yüzme</a>
+            <a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a>
+            <a href="egitim/kick-boks.html">Kick Boks</a>
+            <a href="egitim/boks.html">Boks</a>
+            <a href="egitim/gures.html">Güreş</a>
+            <a href="egitim/mma.html">MMA</a>
+          </div>
+        </div>
         <a href="index.html#neden">Neden Biz</a>
         <a href="index.html#nasil">Süreç</a>
         <a href="index.html#indirim">Fırsat</a>
+        <a href="blog.html">Blog</a>
         <a href="iletisim.html">İletişim</a>
       </nav>
       <button class="menu-btn" aria-label="Menü" id="menuBtn">
@@ -32,10 +46,24 @@
     <nav class="nav-mobile" id="navMobile" aria-hidden="true">
       <a href="index.html">Anasayfa</a>
       <a href="index.html#hakkimizda">Hakkımızda</a>
-      <a href="index.html#egitim">Eğitimler</a>
+      <button type="button" class="nav-mobile-trigger" id="navMobileTrigger" aria-expanded="false" aria-controls="navMobileSub">Hizmetler</button>
+      <div class="nav-mobile-sub" id="navMobileSub">
+        <div class="nav-mobile-sub-inner">
+          <a href="egitim/fitness.html">Fitness</a>
+          <a href="egitim/dovus-sporlari.html">Dövüş Sporları</a>
+          <a href="egitim/reformer-pilates.html">Reformer Pilates</a>
+          <a href="egitim/yuzme.html">Yüzme</a>
+          <a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a>
+          <a href="egitim/kick-boks.html">Kick Boks</a>
+          <a href="egitim/boks.html">Boks</a>
+          <a href="egitim/gures.html">Güreş</a>
+          <a href="egitim/mma.html">MMA</a>
+        </div>
+      </div>
       <a href="index.html#neden">Neden Biz</a>
       <a href="index.html#nasil">Süreç</a>
       <a href="index.html#indirim">Fırsat</a>
+      <a href="blog.html">Blog</a>
       <a href="iletisim.html">İletişim</a>
     </nav>
   </header>
@@ -110,16 +138,22 @@
           <li><a href="index.html">Ana sayfa</a></li>
           <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
           <li><a href="index.html#egitim">Eğitimler</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="iletisim.html">İletişim</a></li>
         </ul>
       </div>
       <div class="footer-block">
         <h4 class="footer-title">Eğitimler</h4>
         <ul class="footer-links">
-          <li><a href="index.html#egitim">Fitness</a></li>
-          <li><a href="index.html#egitim">Dövüş Sporları</a></li>
-          <li><a href="index.html#egitim">Reformer Pilates</a></li>
-          <li><a href="index.html#egitim">Yüzme</a></li>
+          <li><a href="egitim/fitness.html">Fitness</a></li>
+          <li><a href="egitim/dovus-sporlari.html">Dövüş Sporları</a></li>
+          <li><a href="egitim/reformer-pilates.html">Reformer Pilates</a></li>
+          <li><a href="egitim/yuzme.html">Yüzme</a></li>
+          <li><a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a></li>
+          <li><a href="egitim/kick-boks.html">Kick Boks</a></li>
+          <li><a href="egitim/boks.html">Boks</a></li>
+          <li><a href="egitim/gures.html">Güreş</a></li>
+          <li><a href="egitim/mma.html">MMA</a></li>
         </ul>
       </div>
       <div class="footer-block">
@@ -160,6 +194,30 @@
           a.addEventListener('click', function () {
             navMobile.setAttribute('aria-hidden', 'true');
             menuBtn.classList.remove('open');
+          });
+        });
+      }
+      var dropdown = document.querySelector('.nav-dropdown');
+      if (dropdown) {
+        dropdown.addEventListener('mouseenter', function () { dropdown.classList.add('open'); });
+        dropdown.addEventListener('mouseleave', function () { dropdown.classList.remove('open'); });
+      }
+      var mobileTrigger = document.getElementById('navMobileTrigger');
+      var mobileSub = document.getElementById('navMobileSub');
+      if (mobileTrigger && mobileSub) {
+        mobileTrigger.addEventListener('click', function () {
+          var open = mobileTrigger.getAttribute('aria-expanded') === 'true';
+          mobileTrigger.setAttribute('aria-expanded', !open);
+          mobileSub.classList.toggle('open', !open);
+        });
+        mobileSub.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            var nav = document.getElementById('navMobile');
+            if (nav) { nav.setAttribute('aria-hidden', 'true'); }
+            var btn = document.getElementById('menuBtn');
+            if (btn) { btn.classList.remove('open'); }
+            mobileTrigger.setAttribute('aria-expanded', 'false');
+            mobileSub.classList.remove('open');
           });
         });
       }

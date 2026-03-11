@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5Q4ZNDM');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>d.academy – Premium Bire Bir Spor & Eğitim</title>
+  <meta name="description" content="İstanbul'da premium bire bir eğitim. Fitness, dövüş sporları, reformer pilates ve yüzme. Potansiyelinizin zirvesi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5Q4ZNDM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="d.academy" class="logo-img" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Anasayfa</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#egitmenler">Eğitmenler</a>
+        <div class="nav-dropdown">
+          <a href="#egitim" class="nav-dropdown-trigger">Eğitimler <span class="nav-arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="egitim/fitness.html">Fitness</a>
+            <a href="egitim/dovus-sporlari.html">Dövüş Sporları</a>
+            <a href="egitim/reformer-pilates.html">Reformer Pilates</a>
+            <a href="egitim/yuzme.html">Yüzme</a>
+            <a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a>
+            <a href="egitim/kick-boks.html">Kick Boks</a>
+            <a href="egitim/boks.html">Boks</a>
+            <a href="egitim/gures.html">Güreş</a>
+            <a href="egitim/mma.html">MMA</a>
+          </div>
+        </div>
+        <a href="#fiyatlandirma">Paketler</a>
+        <a href="blog.html">Blog</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+      <button class="menu-btn" aria-label="Menü" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="navMobile" aria-hidden="true">
+      <a href="index.html">Anasayfa</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#egitmenler">Eğitmenler</a>
+      <button type="button" class="nav-mobile-trigger" id="navMobileTrigger" aria-expanded="false" aria-controls="navMobileSub">Hizmetler</button>
+      <div class="nav-mobile-sub" id="navMobileSub">
+        <div class="nav-mobile-sub-inner">
+          <a href="egitim/fitness.html">Fitness</a>
+          <a href="egitim/dovus-sporlari.html">Dövüş Sporları</a>
+          <a href="egitim/reformer-pilates.html">Reformer Pilates</a>
+          <a href="egitim/yuzme.html">Yüzme</a>
+          <a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a>
+          <a href="egitim/kick-boks.html">Kick Boks</a>
+          <a href="egitim/boks.html">Boks</a>
+          <a href="egitim/gures.html">Güreş</a>
+          <a href="egitim/mma.html">MMA</a>
+        </div>
+      </div>
+      <a href="#sss">SSS</a>
+      <a href="blog.html">Blog</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO – MacFit tarzı: tam ekran, koyu overlay, beyaz metin, net CTA -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1920&q=85" alt="" class="hero-bg-img" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1 class="hero-title">Potansiyelinizin<br /><span class="hero-title-accent">Zirve Noktası</span></h1>
+        <p class="hero-tagline">Premium Bire Bir Eğitim</p>
+        <a href="#kayit" class="btn btn-hero-primary">Şimdi Katıl</a>
+        <a href="#egitim" class="hero-link">Eğitimleri incele</a>
+      </div>
+      <!-- İnce form şeridi – hero'nun altında, öğeler yan yana -->
+      <div class="hero-form-strip" id="kayit">
+        <div class="container hero-form-strip-inner">
+          <p class="hero-form-strip-note">Ücretsiz detaylı ölçüm dahil — Hemen başvurun</p>
+          <form class="hero-strip-form" id="heroForm">
+            <input type="text" id="heroName" name="name" class="hero-strip-input" placeholder="Ad Soyad" required />
+            <input type="tel" id="heroPhone" name="phone" class="hero-strip-input" placeholder="Telefon" required />
+            <label class="hero-strip-kvkk">
+              <input type="checkbox" name="kvkk" required />
+              <span>KVKK kabul</span>
+            </label>
+            <button type="submit" class="btn hero-strip-btn">Gönder</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Keşfet</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-inner">
+        <div class="stat">
+          <span class="stat-num" data-count="5">5</span>
+          <span class="stat-label">Uzman Eğitmen</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Eğitim Dalı</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">12</span>
+          <span class="stat-label">Yıllık Deneyim</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="124">124</span>
+          <span class="stat-label">Mutlu Üye</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINERS -->
+    <section class="trainers" id="egitmenler">
+      <div class="container">
+        <p class="section-badge">Ekibimiz</p>
+        <h2 class="section-title">Uzman Eğitmenler</h2>
+        <p class="section-subtitle">Sertifikalar, deneyim ve tutkuyla yanınızda</p>
+        <div class="trainers-grid">
+          <article class="trainer-card">
+            <div class="trainer-card-img" style="--img: url('https://images.unsplash.com/photo-1570306995491-f1fcaacbada2?auto=format&fit=crop&w=400&q=80')"></div>
+            <div class="trainer-card-content">
+              <h3>Ahmet Kaplan</h3>
+              <p class="trainer-specialty">Fitness & Kuvvet Antrenmanı</p>
+              <p class="trainer-cert">ISSN Sertifikalı</p>
+              <p class="trainer-bio">12 yıl deneyim. Vücut rekomposisyonu ve performans antrenmanında uzman.</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <div class="trainer-card-img" style="--img: url('https://images.unsplash.com/photo-1544080278-82b0cf32e390?auto=format&fit=crop&w=400&q=80')"></div>
+            <div class="trainer-card-content">
+              <h3>Zeynep Yıldız</h3>
+              <p class="trainer-specialty">Reformer Pilates & Esneklik</p>
+              <p class="trainer-cert">RCEP Sertifikası</p>
+              <p class="trainer-bio">8 yıl pilates uzmanlığı. Postür düzeltme ve core güçlendirmede başarılı sonuçlar.</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <div class="trainer-card-img" style="--img: url('https://images.unsplash.com/photo-1619705875944-c1174a3cbb30?auto=format&fit=crop&w=400&q=80')"></div>
+            <div class="trainer-card-content">
+              <h3>Can Yılmaz</h3>
+              <p class="trainer-specialty">Dövüş Sporları & Boks</p>
+              <p class="trainer-cert">Boks Antrenörü (AIBA)</p>
+              <p class="trainer-bio">15 yıl boks geçmişi. Ring disiplini ve teknik mükemmellik garantisi.</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <div class="trainer-card-img" style="--img: url('https://images.unsplash.com/photo-1506435773649-6f3db1b912fe?auto=format&fit=crop&w=400&q=80')"></div>
+            <div class="trainer-card-content">
+              <h3>Deniz Arslan</h3>
+              <p class="trainer-specialty">Yüzme & Aquatic Fitness</p>
+              <p class="trainer-cert">FINA Sertifikası</p>
+              <p class="trainer-bio">10 yıl yüzme koçluğu. Başlangıçtan ileri seviyeye teknik öğretimi.</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <div class="trainer-card-img" style="--img: url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=400&q=80')"></div>
+            <div class="trainer-card-content">
+              <h3>Gökhan Demir</h3>
+              <p class="trainer-specialty">MMA & Tekme Sporları</p>
+              <p class="trainer-cert">MMA Head Coach</p>
+              <p class="trainer-bio">11 yıl karma dövüş sanatları. Bütünsel spor yaklaşımı ve yaralanma önleme.</p>
+            </div>
+          </article>
+          <article class="trainer-card">
+            <div class="trainer-card-img" style="--img: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=400&q=80')"></div>
+            <div class="trainer-card-content">
+              <h3>Ayşe Toprak</h3>
+              <p class="trainer-specialty">Medikal Fitness & Rehabilitasyon</p>
+              <p class="trainer-cert">Fizyoterapist + Antrenör</p>
+              <p class="trainer-bio">9 yıl tecrübe. Sakatlık sonrası rehabilitasyon ve önleyici eğitim.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="hakkimizda">
+      <div class="container about-inner">
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=800&q=80" alt="Premium spor eğitimi" />
+          <div class="about-media-badge">d.academy</div>
+        </div>
+        <div class="about-content">
+          <p class="section-badge">Hakkımızda</p>
+          <h2 class="section-title section-title--left">Premium Spor Deneyimi, Bire Bir Odak</h2>
+          <p class="about-lead">Yılların deneyimi ve uzman kadromuzla potansiyelinizi keşfedin.</p>
+          <p class="about-text">d.academy olarak fitness, dövüş sporları, reformer pilates ve yüzme alanında bire bir eğitim veriyoruz. Grup derslerinde kaybolmayın; hedefinize özel programlar, profesyonel eğitmenler ve modern tesislerle performansınızı zirveye taşıyoruz. İster kilo vermek isteyin, ister teknik geliştirmek — yolculuğunuzda yanınızdayız.</p>
+          <ul class="about-list">
+            <li>Kişiye özel antrenman programları</li>
+            <li>Uluslararası standartlarda eğitim</li>
+            <li>Güvenli ve motivasyon dolu ortam</li>
+            <li>Tüm yaş ve seviyelere uygun</li>
+          </ul>
+          <a href="#indirim" class="btn btn-primary">İlk Ay %30 İndirim</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES – Örnek tasarım: badge, başlık, alt başlık, 4 kart (görsel + koyu overlay + teal etiket + beyaz metin) -->
+    <section class="services" id="egitim">
+      <div class="container">
+        <p class="services-badge">Eğitimlerimiz</p>
+        <h2 class="services-title">Tüm Eğitimler, Tek Çatı Altında</h2>
+        <p class="services-sub">Her biri alanında uzman eğitmenlerle bire bir çalışın.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <a href="egitim/fitness.html" class="service-card-link" aria-label="Fitness detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Fitness</span>
+              <h3 class="service-card-title">Fitness</h3>
+              <p class="service-card-desc">Kuvvet, dayanıklılık ve form. Kişisel hedeflerinize uygun programlarla profesyonel antrenman.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/dovus-sporlari.html" class="service-card-link" aria-label="Dövüş Sporları detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Dövüş</span>
+              <h3 class="service-card-title">Dövüş Sporları</h3>
+              <p class="service-card-desc">Teknik ve kondisyon odaklı bire bir dövüş sporları eğitimi. Güvenli ve disiplinli ortam.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/reformer-pilates.html" class="service-card-link" aria-label="Reformer Pilates detay sayfası"></a>
+            <div class="service-card-bg">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Reformer Pilates" />
+            </div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Pilates</span>
+              <h3 class="service-card-title">Reformer Pilates</h3>
+              <p class="service-card-desc">Reformer ile esneklik, core gücü ve postür. Sakatlık önleme ve rehabilitasyon desteği.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/yuzme.html" class="service-card-link" aria-label="Yüzme detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Yüzme</span>
+              <h3 class="service-card-title">Yüzme</h3>
+              <p class="service-card-desc">Başlangıçtan ileri seviyeye özel yüzme dersleri. Teknik ve güven odaklı eğitim.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/medikal-fitness-pilates.html" class="service-card-link" aria-label="Medikal Fitness Pilates detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Medikal</span>
+              <h3 class="service-card-title">Medikal Fitness / Pilates</h3>
+              <p class="service-card-desc">Rehabilitasyon ve sakatlık sonrası iyileşme odaklı medikal fitness ve pilates. Kişiye özel program.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/kick-boks.html" class="service-card-link" aria-label="Kick Boks detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1583454110551-21f2fa2ac61f?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Kick Boks</span>
+              <h3 class="service-card-title">Kick Boks</h3>
+              <p class="service-card-desc">Yumruk ve tekneğin bir arada kullanıldığı kick boks eğitimi. Kondisyon ve teknik bire bir çalışılır.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/boks.html" class="service-card-link" aria-label="Boks detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Boks</span>
+              <h3 class="service-card-title">Boks</h3>
+              <p class="service-card-desc">Klasik boks tekniği, ayak çalışması ve ring stratejisi. Bire bir antrenör eşliğinde ilerleyin.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/gures.html" class="service-card-link" aria-label="Güreş detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">Güreş</span>
+              <h3 class="service-card-title">Güreş</h3>
+              <p class="service-card-desc">Geleneksel ve serbest güreş teknikleri. Güç, denge ve taktik odaklı bire bir güreş eğitimi.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <a href="egitim/mma.html" class="service-card-link" aria-label="MMA detay sayfası"></a>
+            <div class="service-card-bg" style="--img: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+              <span class="service-tag">MMA</span>
+              <h3 class="service-card-title">MMA</h3>
+              <p class="service-card-desc">Karma dövüş sanatları: boks, tekme, güreş ve yer dövüşü. Kapsamlı ve güvenli bire bir MMA eğitimi.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why" id="neden">
+      <div class="container">
+        <p class="section-badge">Neden d.academy</p>
+        <h2 class="section-title">Farkımız Ne?</h2>
+        <div class="why-grid">
+          <div class="why-card why-card--highlight">
+            <div class="why-icon">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=120&q=80" alt="" />
+            </div>
+            <h3>Ücretsiz Detaylı Ölçüm</h3>
+            <p>Başlamadan önce vücut analizi, hedef belirleme ve mevcut durum değerlendirmesi ücretsiz. Programınız bu ölçüme göre kişiselleştirilir.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=120&q=80" alt="" />
+            </div>
+            <h3>Bire Bir Odak</h3>
+            <p>Grup dersinde kaybolmayın. Tüm dikkat sizin üzerinizde; ilerleme hızınız maksimum.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=120&q=80" alt="" />
+            </div>
+            <h3>Uzman Eğitmenler</h3>
+            <p>Sertifikalı, deneyimli kadro. Spor bilimi ve güncel yöntemlerle eğitim.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=120&q=80" alt="" />
+            </div>
+            <h3>Kişiye Özel Program</h3>
+            <p>Hedefinize, seviyenize ve zamanınıza göre tam size özel plan.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=120&q=80" alt="Premium spor tesisi" />
+            </div>
+            <h3>Premium Ortam</h3>
+            <p>Temiz, güvenli ve motive eden tesisler. Spor yaparken kendinizi evinizde hissedin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <p class="section-badge">Mutluluğunuz, Başarımız</p>
+        <h2 class="section-title">Üyelerimiz Ne Diyor?</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"3 ayda %15 vücut yağı kaybedip 8 kg kas kazandım. Ahmet Bey'in planı mükemmel ayarlandı. Bire bir çalışmanın farkını yaşadım."</p>
+            <p class="testimonial-author">Emre T. / Fitness</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"Boks ile ilgili tüm korkularımı konuştuğum ilk gün yok oldu. Can Bey sabırlı ve güvenli ortam sağlıyor. İlk maçıma birkaç ay kala hazırım!"</p>
+            <p class="testimonial-author">Merve K. / Boks</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"Omuz ağrım oyunları engelliyordu. Zeynep Hanım'ın pilates programı ile 2 ay sonra eski performansıma döndüm. Çok teşekkürler!"</p>
+            <p class="testimonial-author">Ali D. / Reformer Pilates</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"Hiç yüzmemiştim. Deniz Bey beni 5 haftada tamamen rahatlamış şekilde yüzebilir hale getirdi. Artık havuzda kendimi evim gibi hissediyorum."</p>
+            <p class="testimonial-author">Selin M. / Yüzme</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"Ayak bileği sakatlanmasından sonra Ayşe Hanım'ın rehabilitasyon programı inanılmaz sonuç verdi. Güvenle antrenman yapabiliyorum artık."</p>
+            <p class="testimonial-author">Fatih B. / Medikal Fitness</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="testimonial-text">"Gökhan Hoca sayesinde MMA'ya başladım ve haftalar içersinde temel tekniklere hakim oldum. Disipliner ama çok eğlenceli bir proses!"</p>
+            <p class="testimonial-author">Mert Y. / MMA</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS – Modern süreç -->
+    <section class="steps-v2" id="nasil">
+      <div class="container">
+        <div class="steps-v2-head">
+          <span class="steps-v2-badge">Süreç</span>
+          <h2 class="steps-v2-title">Nasıl Başlıyoruz?</h2>
+          <p class="steps-v2-intro">Ücretsiz detaylı ölçümle başlıyoruz; hedefinize giden yolu üç net adımda birlikte ilerletiyoruz.</p>
+        </div>
+        <div class="steps-v2-track">
+          <article class="steps-v2-card">
+            <div class="steps-v2-card-img" style="--img: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80')">
+              <span class="steps-v2-num" aria-hidden="true">01</span>
+            </div>
+            <div class="steps-v2-card-content">
+              <h3 class="steps-v2-card-title">Tanışma</h3>
+              <p class="steps-v2-card-desc">Hedeflerinizi ve mevcut durumunuzu birlikte değerlendiriyoruz.</p>
+            </div>
+          </article>
+          <article class="steps-v2-card">
+            <div class="steps-v2-card-img" style="--img: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80')">
+              <span class="steps-v2-num" aria-hidden="true">02</span>
+            </div>
+            <div class="steps-v2-card-content">
+              <h3 class="steps-v2-card-title">Program</h3>
+              <p class="steps-v2-card-desc">Size özel antrenman programı hazırlanıyor.</p>
+            </div>
+          </article>
+          <article class="steps-v2-card">
+            <div class="steps-v2-card-img" style="--img: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80')">
+              <span class="steps-v2-num" aria-hidden="true">03</span>
+            </div>
+            <div class="steps-v2-card-content">
+              <h3 class="steps-v2-card-title">Antrenman</h3>
+              <p class="steps-v2-card-desc">Eğitmeninizle bire bir çalışmaya başlıyorsunuz.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="faq" id="sss">
+      <div class="container">
+        <p class="section-badge">Sık Sorulan Sorular</p>
+        <h2 class="section-title">SSS</h2>
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary class="faq-question">İlk seansta ne yapılır?</summary>
+            <div class="faq-answer">
+              <p>İlk seansınızda hedeflerinizi, antrenman geçmişinizi ve fiziksel durumunuzu değerlendiririz. Vücut ölçümleri, kuvvet testi ve esnek testleri yaparak başlangıç noktanızı belirleriz. Daha sonra size özel bir programa başlarız.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Hangi yaşta başlayabilirim?</summary>
+            <div class="faq-answer">
+              <p>d.academy tüm yaşlara uygun eğitim verir. 18 yaş altı için ebeveyn izni ve rehber gözetim gerekmektedir. 60+ yaş grubumuz için özel medikal fitness programları da mevcuttur.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Haftada kaç seans yapmalıyım?</summary>
+            <div class="faq-answer">
+              <p>Hedefinize ve başlangıç seviyenize göre değişir. Başlangıçta haftada 2-3 seans önerilir. Ciddi hedefler için haftada 4-5 seans idealdir. Eğitmeniniz sizi doğru tavsiye edecektir.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Beslenme danışmanlığı dahil mi?</summary>
+            <div class="faq-answer">
+              <p>Pro ve Elite paketlerde beslenme danışmanlığı dahildir. Starter paketi seçseniz bile, temel beslenme tavsiyeleri verilir. Detaylı diyet planı için ek derişim gerekebilir.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Seansa erişim ne kadar?</summary>
+            <div class="faq-answer">
+              <p>Standart seanlar 50-60 dakikadır. İhtiyacınıza göre 90 dakikayla uzatabilirsiniz. Ayrıntılı program tasarım için başa dönüş seansı mümkündür.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Sakatlığım varsa ne yapabilirim?</summary>
+            <div class="faq-answer">
+              <p>Ayşe Hanım (fizyoterapist) ile birlikte sakatlığınıza uygun rehabilitasyon programı oluştururuz. Medikal Fitness paketini önerilir. İlk seansda sağlık durumunuz detaylı değerlendirilir.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Seans iptal edilebilir mi?</summary>
+            <div class="faq-answer">
+              <p>Evet. En az 24 saat öncesinden WhatsApp veya telefonla iptal edebilirsiniz. Acil durumlar için müşteri hizmetlerimizle iletişime geçin.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Tesisler ne zaman açık?</summary>
+            <div class="faq-answer">
+              <p>Pazartesi-Cumartesi: 07:00 - 22:00, Pazar: 09:00 - 21:00. Özel saatler için bize danışabilirsiniz.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="container">
+        <p class="section-badge">Ortamımız</p>
+        <h2 class="section-title">Premium Tesisler</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Spor salonu" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=600&q=80" alt="Antrenman alanı" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=80" alt="Havuz" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="indirim">
+      <div class="cta-bg" style="--img: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="cta-overlay"></div>
+      <div class="container cta-inner">
+        <h2 class="cta-title">İlk Aya Özel <span class="cta-off">%30 İndirim</span></h2>
+        <p>Hemen kayıt olun, premium bire bir eğitimde ilk ay avantajını kaçırmayın.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/905337336511" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp ile Başvur</a>
+          <a href="tel:+905337336511" class="btn btn-secondary">Hemen Ara</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-block">
+        <h4 class="footer-title">Hızlı Erişim</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Ana sayfa</a></li>
+          <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
+          <li><a href="index.html#egitim">Eğitimler</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-block">
+        <h4 class="footer-title">Eğitimler</h4>
+        <ul class="footer-links">
+          <li><a href="egitim/fitness.html">Fitness</a></li>
+          <li><a href="egitim/dovus-sporlari.html">Dövüş Sporları</a></li>
+          <li><a href="egitim/reformer-pilates.html">Reformer Pilates</a></li>
+          <li><a href="egitim/yuzme.html">Yüzme</a></li>
+          <li><a href="egitim/medikal-fitness-pilates.html">Medikal Fitness / Pilates</a></li>
+          <li><a href="egitim/kick-boks.html">Kick Boks</a></li>
+          <li><a href="egitim/boks.html">Boks</a></li>
+          <li><a href="egitim/gures.html">Güreş</a></li>
+          <li><a href="egitim/mma.html">MMA</a></li>
+        </ul>
+      </div>
+      <div class="footer-block">
+        <h4 class="footer-title">İletişim</h4>
+        <ul class="footer-contact">
+          <li><a href="tel:+905337336511">+90 533 733 65 11</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=İstiklal,+Piyalepaşa+Blv.+1+30+D:2,+34440+Beyoğlu+İstanbul" target="_blank" rel="noopener">İstiklal, Piyalepaşa Blv. 1 30 D:2, Beyoğlu/İstanbul</a></li>
+          <li><a href="https://www.instagram.com/d.academytr/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="footer-brand">d.academy</p>
+      <p class="footer-copy">© 2025 d.academy. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <div class="fixed-contact" aria-label="Hızlı iletişim">
+    <a href="tel:+905337336511" class="fixed-btn fixed-phone" aria-label="Telefonla ara" title="Telefon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a href="https://wa.me/905337336511" class="fixed-btn fixed-whatsapp" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      var header = document.querySelector('.header');
+      function onScroll() {
+        if (window.scrollY > 60) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      var menuBtn = document.getElementById('menuBtn');
+      var navMobile = document.getElementById('navMobile');
+      if (menuBtn && navMobile) {
+        menuBtn.addEventListener('click', function () {
+          var open = navMobile.getAttribute('aria-hidden') !== 'true';
+          navMobile.setAttribute('aria-hidden', open);
+          menuBtn.classList.toggle('open', !open);
+        });
+        navMobile.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            navMobile.setAttribute('aria-hidden', 'true');
+            menuBtn.classList.remove('open');
+          });
+        });
+      }
+      var dropdown = document.querySelector('.nav-dropdown');
+      if (dropdown) {
+        dropdown.addEventListener('mouseenter', function () { dropdown.classList.add('open'); });
+        dropdown.addEventListener('mouseleave', function () { dropdown.classList.remove('open'); });
+      }
+      var mobileTrigger = document.getElementById('navMobileTrigger');
+      var mobileSub = document.getElementById('navMobileSub');
+      if (mobileTrigger && mobileSub) {
+        mobileTrigger.addEventListener('click', function () {
+          var open = mobileTrigger.getAttribute('aria-expanded') === 'true';
+          mobileTrigger.setAttribute('aria-expanded', !open);
+          mobileSub.classList.toggle('open', !open);
+        });
+        mobileSub.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            var nav = document.getElementById('navMobile');
+            if (nav) { nav.setAttribute('aria-hidden', 'true'); }
+            var btn = document.getElementById('menuBtn');
+            if (btn) { btn.classList.remove('open'); }
+            mobileTrigger.setAttribute('aria-expanded', 'false');
+            mobileSub.classList.remove('open');
+          });
+        });
+      }
+      var form = document.getElementById('heroForm');
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var name = (document.getElementById('heroName') && document.getElementById('heroName').value) || '';
+          var phone = (document.getElementById('heroPhone') && document.getElementById('heroPhone').value) || '';
+          var text = 'Merhaba, web sitesinden iletişime geçiyorum. Adım: ' + encodeURIComponent(name) + ', Telefon: ' + encodeURIComponent(phone);
+          window.open('https://wa.me/905337336511?text=' + text, '_blank');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
